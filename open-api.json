@@ -208,7 +208,7 @@
 				"requestBody": {
 					"required": true,
 					"content": {
-						"aplication/json": {
+						"application/json": {
 							"schema": {
 								"$ref": "#/components/schemas/CreateOrUpdateUser"
 							},
@@ -273,14 +273,14 @@
 				}
 			} 
 		},
-		"/users/id": {
+		"/users/{userId}": {
 			"get" : {
 				"tags": ["C-Track App - User"],
 				"summary": "Get Data User by id",
 				"description": "Get Data User by id",
 				"parameters": [
 					{
-						"id": "id",
+						"name": "userId",
 						"in": "query",
 						"required": true,
 						"description": "Filter Get Data User by id",
@@ -475,7 +475,7 @@
 				"requestBody": {
 					"required": true,
 					"content": {
-						"aplication/json": {
+						"application/json": {
 							"schema": {
 								"$ref": "#/components/schemas/CreateOrUpdateNakes"
 							},
@@ -547,7 +547,7 @@
 				"description": "Get Data Nakes by id",
 				"parameters": [
 					{
-						"id": "id",
+						"name": "nakesId",
 						"in": "query",
 						"required": true,
 						"description": "Filter Get Data Nakes by id",
@@ -742,7 +742,7 @@
 				"requestBody": {
 					"required": true,
 					"content": {
-						"aplication/json": {
+						"application/json": {
 							"schema": {
 								"$ref": "#/components/schemas/CreateOrUpdateChecker"
 							},
@@ -814,7 +814,7 @@
 				"description": "Get Data Checker by id",
 				"parameters": [
 					{
-						"id": "id",
+						"name": "checkerId",
 						"in": "query",
 						"required": true,
 						"description": "Filter Get Data Checker by id",
@@ -1009,7 +1009,7 @@
 				"requestBody": {
 					"required": true,
 					"content": {
-						"aplication/json": {
+						"application/json": {
 							"schema": {
 								"$ref": "#/components/schemas/CreateOrUpdateTest"
 							},
@@ -1093,7 +1093,7 @@
 				"description": "Get Data Testing Covid Result by id",
 				"parameters": [
 					{
-						"id": "id",
+						"name": "testId",
 						"in": "query",
 						"required": true,
 						"description": "Filter Get Data Testing Covid by id",
