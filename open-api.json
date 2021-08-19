@@ -35,6 +35,150 @@
 		}
 	],
 	"paths": {
+		"/login/nakes": {
+			"post": {
+				"tags": ["C-Track App - Login"],
+				"summary": "Login When You Have Nakes Account",
+				"description": "Login into C-Track App When You Have Nakes Account",
+				"requestBody": {
+					"required": true,
+					"content": {
+						"application/json": {
+							"schema": {
+								"$ref": "#/components/schemas/CreateOrUpdateNakes"
+							},
+							"examples": {
+								"dr. Boyke Santoso": {
+									"description": "Login into C-Track App When You Have Nakes Account dr. Boyke Santoso",
+									"value": {
+										"id": "3030303030303030",
+										"password": "012345"
+									}
+								},
+								"dr. Felix Harahap": {
+									"description": "Login into C-Track App When You Have Nakes Account dr. Felix Harahap",
+									"value": {
+										"id": "3131313131313131",
+										"password": "123456"
+									}
+								}
+							}
+						}
+					}
+				},
+				"responses": {
+					"200": {
+						"description": "Success Login into C-Track App",
+						"content": {
+							"examples": {
+								"dr. Boyke Santoso": {
+									"description": "Success Login into C-Track App as dr. Boyke Santoso"
+								},
+								"dr. Felix Harahap": {
+									"description": "Success Login into C-Track App as dr. Felix Harahap"
+								}
+							}
+						}
+					}
+				}
+			}
+		},
+		"/login/checker": {
+			"post": {
+				"tags": ["C-Track App - Login"],
+				"summary": "Login When You Have Checker Account",
+				"description": "Login into C-Track App When You Have Checker Account",
+				"requestBody": {
+					"required": true,
+					"content": {
+						"application/json": {
+							"schema": {
+								"$ref": "#/components/schemas/CreateOrUpdateChecker"
+							},
+							"examples": {
+								"Bambang Pranoto": {
+									"description": "Login into C-Track App When You Have Checker Account Bambang Pranoto",
+									"value": {
+										"id": "1818181818181818",
+										"password": "012345"
+									}
+								},
+								"Kurniawan Yulianto": {
+									"description": "Login into C-Track App When You Have Checker Account Kurniawan Yulianto",
+									"value": {
+										"id": "1919191919191919",
+										"password": "123456"
+									}
+								}
+							}
+						}
+					}
+				},
+				"responses": {
+					"200": {
+						"description": "Success Login into C-Track App",
+						"content": {
+							"examples": {
+								"Bambang Pranoto": {
+									"description": "Success Login into C-Track App as Bambang Pranoto"
+								},
+								"Kurniawan Yulianto": {
+									"description": "Success Login into C-Track App as Kurniawan Yulianto"
+								}
+							}
+						}
+					}
+				}
+			}
+		},
+		"/login/users": {
+			"post": {
+				"tags": ["C-Track App - Login"],
+				"summary": "Login When You Have User Account",
+				"description": "Login into C-Track App When You Have User Account",
+				"requestBody": {
+					"required": true,
+					"content": {
+						"application/json": {
+							"schema": {
+								"$ref": "#/components/schemas/CreateOrUpdateUser"
+							},
+							"examples": {
+								"Doni Pebruwantoro": {
+									"description": "Login into C-Track App When You Have User Account Doni Pebruwantoro",
+									"value": {
+										"id": "351210010120090008",
+										"password": "012345"
+									}
+								},
+								"David Beckham": {
+									"description": "Login into C-Track App When You Have User Account David Beckham",
+									"value": {
+										"id": "351910010120090001",
+										"password": "123456"
+									}
+								}
+							}
+						}
+					}
+				},
+				"responses": {
+					"200": {
+						"description": "Success Login into C-Track App",
+						"content": {
+							"examples": {
+								"Doni Pebruwantoro": {
+									"description": "Success Login into C-Track App as Doni Pebruwantoro"
+								},
+								"David Beckham": {
+									"description": "Success Login into C-Track App as David Beckham"
+								}
+							}
+						}
+					}
+				}
+			}
+		},
 		"/users": {
 			"post": {
 				"tags": ["C-Track App - User"],
@@ -54,6 +198,7 @@
 										"id": "351210010120090008",
 										"name": "Doni Pebruwantoro",
 										"email": "painakatsuki@gmail.com",
+										"password": "012345",
 										"phone number": "081927818989"
 									}
 								},
@@ -63,6 +208,7 @@
 										"id": "351910010120090001",
 										"name": "David Beckham",
 										"email": "beckham@gmail.com",
+										"password": "123456",
 										"phone number": "081111111111"
 									}
 								}
@@ -313,6 +459,7 @@
 										"id": "3030303030303030",
 										"name": "dr. Boyke Santoso",
 										"email": "smartdoctor@gmail.com",
+										"password": "012345",
 										"phone number": "085789101112"
 									}
 								},
@@ -322,6 +469,7 @@
 										"id": "3131313131313131",
 										"name": "dr. Felix Harahap",
 										"email": "cleverdoctor@gmail.com",
+										"password": "123456",
 										"phone number": "081717171717"
 									}
 								}
@@ -572,6 +720,7 @@
 										"id": "1818181818181818",
 										"name": "Bambang Pranoto",
 										"email": "securityganteng@gmail.com",
+										"password": "012345",
 										"phone number": "082222222222"
 									}
 								},
@@ -581,6 +730,7 @@
 										"id": "1919191919191919",
 										"name": "Kurniawan Yulianto",
 										"email": "checkerhebat@gmail.com",
+										"password": "123456",
 										"phone number": "085777777777"
 									}
 								}
