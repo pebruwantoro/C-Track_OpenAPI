@@ -346,7 +346,7 @@
 					"content": {
 						"application/json": {
 							"schema": {
-								"$ref": "#/components/schemas/CreateOrUpdateUsers"
+								"$ref": "#/components/schemas/CreateOrUpdateUser"
 							},
 							"examples": {
 								"Doni Pebruwantoro": {
@@ -1238,6 +1238,216 @@
 								}
 							}
 						}
+					}
+				}
+			}
+		}
+	},
+	"components": {
+		"securitySchemes": {},
+		"parameters": {},
+		"schemas": {
+			"users" : {
+				"type": "object",
+				"properties": {
+					"id": {
+						"type": "string"
+					},
+					"name": {
+						"type": "string"
+					},
+					"email": {
+						"type": "string"
+					},
+					"password": {
+						"type": "string"
+					},
+					"phone number": {
+						"type": "string"
+					}
+				}
+			},
+			"checker" : {
+				"type": "object",
+				"properties": {
+					"id": {
+						"type": "string"
+					},
+					"name": {
+						"type": "string"
+					},
+					"email": {
+						"type": "string"
+					},
+					"password": {
+						"type": "string"
+					},
+					"phone number": {
+						"type": "string"
+					}
+				}
+			},
+			"nakes" : {
+				"type": "object",
+				"properties": {
+					"id": {
+						"type": "string"
+					},
+					"name": {
+						"type": "string"
+					},
+					"email": {
+						"type": "string"
+					},
+					"password": {
+						"type": "string"
+					},
+					"phone number": {
+						"type": "string"
+					}
+				}
+			},
+			"test" : {
+				"type": "object",
+				"properties": {
+					"id": {
+						"type": "string"
+					},
+					"NIK": {
+						"type": "string"
+					},
+					"date_of_test": {
+						"type": "string"
+					},
+					"test_category_id": {
+						"type": "number",
+						"format": "int32"
+					},
+					"str_id": {
+						"type": "string"
+					},
+					"date_of_result": {
+						"type": "string"
+					},
+					"result_status": {
+						"type": "string"
+					},
+					"note": {
+						"type": "string"
+					}
+				}
+			},
+			"ArrayUsers" : {
+				"type": "array",
+				"items": {
+					"$ref": "#/components/schemas/users"
+				}
+			},
+			"ArrayChecker" : {
+				"type": "array",
+				"items": {
+					"$ref": "#/components/schemas/checker"
+				}
+			},
+			"ArrayNakes" : {
+				"type": "array",
+				"items": {
+					"$ref": "#/components/schemas/nakes"
+				}
+			},
+			"ArrayTest" : {
+				"type": "array",
+				"items": {
+					"$ref": "#/components/schemas/test"
+				}
+			},
+			"CreateOrUpdateUser": {
+				"type": "object",
+				"properties": {
+					"id": {
+						"type": "string"
+					},
+					"name": {
+						"type": "string"
+					},
+					"email": {
+						"type": "string"
+					},
+					"password": {
+						"type": "string"
+					},
+					"phone number": {
+						"type": "string"
+					}
+				}
+			},
+			"CreateOrUpdateNakes": {
+				"type": "object",
+				"properties": {
+					"id": {
+						"type": "string"
+					},
+					"name": {
+						"type": "string"
+					},
+					"email": {
+						"type": "string"
+					},
+					"password": {
+						"type": "string"
+					},
+					"phone number": {
+						"type": "string"
+					}
+				}
+			},
+			"CreateOrUpdateChecker": {
+				"type": "object",
+				"properties": {
+					"id": {
+						"type": "string"
+					},
+					"name": {
+						"type": "string"
+					},
+					"email": {
+						"type": "string"
+					},
+					"password": {
+						"type": "string"
+					},
+					"phone number": {
+						"type": "string"
+					}
+				}
+			},
+			"CreateOrUpdateTest": {
+				"type": "object",
+				"properties": {
+					"id": {
+						"type": "string"
+					},
+					"NIK": {
+						"type": "string"
+					},
+					"date_of_test": {
+						"type": "string"
+					},
+					"test_category_id": {
+						"type": "number",
+						"format": "int32"
+					},
+					"str_id": {
+						"type": "string"
+					},
+					"date_of_result": {
+						"type": "string"
+					},
+					"result_status": {
+						"type": "string"
+					},
+					"note": {
+						"type": "string"
 					}
 				}
 			}
