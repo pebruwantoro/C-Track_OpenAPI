@@ -8,11 +8,11 @@
 			"name": "C-Track App Team",
 			"email": "pebruwantoro.doni@gmail.com",
 			"url": "https://www.linkedin.com/in/doni-pebruwantoro-7bb145136/"
+		},
+		"license": {
+			"name": "APACHE 2.0",
+			"url": "https://www.apache.org/licenses/LICENSE-2.0"
 		}
-	},
-	"license": {
-		"name": "APACHE 2.0",
-		"url": "https://www.apache.org/licenses/LICENSE-2.0"
 	},
 	"externalDocs": {
 		"description":"Github C-Track App",
@@ -281,7 +281,7 @@
 				"parameters": [
 					{
 						"name": "userId",
-						"in": "query",
+						"in": "path",
 						"required": true,
 						"description": "Filter Get Data User by id",
 						"schema": {
@@ -548,7 +548,7 @@
 				"parameters": [
 					{
 						"name": "nakesId",
-						"in": "query",
+						"in": "path",
 						"required": true,
 						"description": "Filter Get Data Nakes by id",
 						"schema": {
@@ -569,15 +569,15 @@
 				],
 				"responses": {
 					"200": {
-						"description": "Success Get Data User by id",
+						"description": "Success Get Data Nakes by id",
 						"content": {
 							"application/json": {
 								"schema": {
-									"$ref": "#/components/schemas/ArrayUsers"
+									"$ref": "#/components/schemas/ArrayNakes"
 								},
 								"examples": {
 									"success": {
-										"description": "Example Success Get Data User by id",
+										"description": "Example Success Get Data Nakes by id",
 										"value": [
 											{
 												"id": "3030303030303030",
@@ -815,7 +815,7 @@
 				"parameters": [
 					{
 						"name": "checkerId",
-						"in": "query",
+						"in": "path",
 						"required": true,
 						"description": "Filter Get Data Checker by id",
 						"schema": {
@@ -1094,7 +1094,7 @@
 				"parameters": [
 					{
 						"name": "testId",
-						"in": "query",
+						"in": "path",
 						"required": true,
 						"description": "Filter Get Data Testing Covid by id",
 						"schema": {
