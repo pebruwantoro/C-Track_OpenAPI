@@ -338,7 +338,7 @@
 				"description": "Update Data User by id",
 				"parameters": [
 					{
-						"$ref": "#/components/parameters/users"
+						"$ref": "#/components/parameters/userId"
 					}
 				],
 				"requestBody": {
@@ -414,7 +414,7 @@
 				"description": "Delete Data User by id",
 				"parameters": [
 					{
-						"$ref": "#/components/parameters/users"
+						"$ref": "#/components/parameters/userId"
 					}
 				],
 				"responses": {
@@ -605,7 +605,7 @@
 				"description": "Update Data Nakes by id",
 				"parameters": [
 					{
-						"$ref": "#/components/parameters/nakes"
+						"$ref": "#/components/parameters/nakesId"
 					}
 				],
 				"requestBody": {
@@ -681,7 +681,7 @@
 				"description": "Delete Data Nakes by id",
 				"parameters": [
 					{
-						"$ref": "#/components/parameters/nakes"
+						"$ref": "#/components/parameters/nakesId"
 					}
 				],
 				"responses": {
@@ -872,7 +872,7 @@
 				"description": "Update Data Checker by id",
 				"parameters": [
 					{
-						"$ref": "#/components/parameters/checker"
+						"$ref": "#/components/parameters/checkerId"
 					}
 				],
 				"requestBody": {
@@ -948,7 +948,7 @@
 				"description": "Delete Data Checker by id",
 				"parameters": [
 					{
-						"$ref": "#/components/parameters/checker"
+						"$ref": "#/components/parameters/checkerId"
 					}
 				],
 				"responses": {
@@ -1159,7 +1159,7 @@
 				"description": "Update Data Testing Covid Result id",
 				"parameters": [
 					{
-						"$ref": "#/components/parameters/test"
+						"$ref": "#/components/parameters/testId"
 					}
 				],
 				"requestBody": {
@@ -1245,7 +1245,53 @@
 	},
 	"components": {
 		"securitySchemes": {},
-		"parameters": {},
+		"parameters": {
+			"userId": {
+				"name": "userId",
+				"in": "path",
+				"required": true,
+				"description": "User id for get and update",
+				"schema": {
+					"type": "string",
+					"minLength": 1,
+					"maxLength": 16
+				}
+			},
+			"nakesId": {
+				"name": "nakesId",
+				"in": "path",
+				"required": true,
+				"description": "Nakes id for get and update",
+				"schema": {
+					"type": "string",
+					"minLength": 1,
+					"maxLength": 16
+				}
+			},
+			"checkerId": {
+				"name": "checkerId",
+				"in": "path",
+				"required": true,
+				"description": "Checker id for get and update",
+				"schema": {
+					"type": "string",
+					"minLength": 1,
+					"maxLength": 16
+				}
+			},
+			"testId": {
+				"name": "testId",
+				"in": "path",
+				"required": true,
+				"description": "Test id for get and update",
+				"schema": {
+					"type": "number",
+					"format": "int32",
+					"minLength": 1,
+					"maxLength": 10000
+				}
+			}
+		},
 		"schemas": {
 			"users" : {
 				"type": "object",
