@@ -76,10 +76,12 @@
 								},
 								"examples": {
 									"dr. Boyke Santoso": {
-										"description": "Success Login into C-Track App as dr. Boyke Santoso"
+										"description": "Success Login into C-Track App as dr. Boyke Santoso",
+										"value": "Success Login into C-Track App as dr. Boyke Santoso"
 									},
 									"dr. Felix Harahap": {
-										"description": "Success Login into C-Track App as dr. Felix Harahap"
+										"description": "Success Login into C-Track App as dr. Felix Harahap",
+										"value": "Success Login into C-Track App as dr. Felix Harahap"
 									}
 								}
 							}
@@ -129,10 +131,12 @@
 								},
 								"examples": {
 									"Bambang Pranoto": {
-										"description": "Success Login into C-Track App as Bambang Pranoto"
+										"description": "Success Login into C-Track App as Bambang Pranoto",
+										"value": "Success Login into C-Track App as Bambang Pranoto"
 									},
 									"Kurniawan Yulianto": {
-										"description": "Success Login into C-Track App as Kurniawan Yulianto"
+										"description": "Success Login into C-Track App as Kurniawan Yulianto",
+										"value": "Success Login into C-Track App as Kurniawan Yulianto"
 									}
 								}
 							}
@@ -182,10 +186,12 @@
 								},
 								"examples": {
 									"Doni Pebruwantoro": {
-										"description": "Success Login into C-Track App as Doni Pebruwantoro"
+										"description": "Success Login into C-Track App as Doni Pebruwantoro",
+										"value": "Success Login into C-Track App as Doni Pebruwantoro"
 									},
 									"David Beckham": {
-										"description": "Success Login into C-Track App as David Beckham"
+										"description": "Success Login into C-Track App as David Beckham",
+										"value": "Success Login into C-Track App as David Beckham"
 									}
 								}
 							}
@@ -246,6 +252,7 @@
 											"id": "351210010120090008",
 											"name": "Doni Pebruwantoro",
 											"email": "painakatsuki@gmail.com",
+											"password": "012345",
 											"phone number": "081927818989"
 										}
 									},
@@ -255,6 +262,7 @@
 											"id": "351910010120090001",
 											"name": "David Beckham",
 											"email": "beckham@gmail.com",
+											"password": "123456",
 											"phone number": "081111111111"
 										}
 									}
@@ -347,6 +355,7 @@
 										"id": "351210010120090008",
 										"name": "Doni Pebruwantoro",
 										"email": "painakatsuki@gmail.com",
+										"password" : "012345",
 										"phone number": "089978799897"
 									}
 								},
@@ -356,6 +365,7 @@
 										"id": "351910010120090001",
 										"name": "David Beckham",
 										"email": "beckham@gmail.com",
+										"password" : "123456",
 										"phone number": "082211111111"
 									}
 								}
@@ -378,6 +388,7 @@
 											"id": "351210010120090008",
 											"name": "Doni Pebruwantoro",
 											"email": "painakatsuki@gmail.com",
+											"password" : "012345",
 											"phone number": "089978799897"
 										}
 									},
@@ -387,6 +398,7 @@
 											"id": "351910010120090001",
 											"name": "David Beckham",
 											"email": "beckham@gmail.com",
+											"password" : "123456",
 											"phone number": "082211111111"
 										}
 									}
@@ -507,6 +519,7 @@
 											"id": "3030303030303030",
 											"name": "dr. Boyke Santoso",
 											"email": "smartdoctor@gmail.com",
+											"password": "012345",
 											"phone number": "085789101112"
 										}
 									},
@@ -516,6 +529,7 @@
 											"id": "3131313131313131",
 											"name": "dr. Felix Harahap",
 											"email": "cleverdoctor@gmail.com",
+											"password": "123456",
 											"phone number": "081717171717"
 										}
 									}
@@ -608,6 +622,7 @@
 										"id": "3030303030303030",
 										"name": "dr. Boyke Santoso",
 										"email": "smartdoctor@gmail.com",
+										"password" : "012345",
 										"phone number": "081616161616"
 									}
 								},
@@ -617,6 +632,7 @@
 										"id": "3131313131313131",
 										"name": "dr. Felix Harahap",
 										"email": "cleverdoctor@gmail.com",
+										"password" : "123456",
 										"phone number": "081818181818"
 									}
 								}
@@ -639,6 +655,7 @@
 											"id": "3030303030303030",
 											"name": "dr. Boyke Santoso",
 											"email": "smartdoctor@gmail.com",
+											"password" : "012345",
 											"phone number": "081616161616"
 										}
 									},
@@ -648,6 +665,7 @@
 											"id": "3131313131313131",
 											"name": "dr. Felix Harahap",
 											"email": "cleverdoctor@gmail.com",
+											"password" : "123456",
 											"phone number": "081818181818"
 										}
 									}
@@ -768,6 +786,7 @@
 											"id": "1818181818181818",
 											"name": "Bambang Pranoto",
 											"email": "securityganteng@gmail.com",
+											"password": "012345",
 											"phone number": "082222222222"
 										}
 									},
@@ -777,6 +796,7 @@
 											"id": "1919191919191919",
 											"name": "Kurniawan Yulianto",
 											"email": "checkerhebat@gmail.com",
+											"password": "123456",
 											"phone number": "085777777777"
 										}
 									}
@@ -869,6 +889,7 @@
 										"id": "1818181818181818",
 										"name": "Bambang Pranoto",
 										"email": "securityganteng@gmail.com",
+										"password" : "012345",
 										"phone number": "082121212121"
 									}
 								},
@@ -878,6 +899,7 @@
 										"id": "1919191919191919",
 										"name": "Kurniawan Yulianto",
 										"email": "checkerhebat@gmail.com",
+										"password" : "123456",
 										"phone number": "085767676767"
 									}
 								}
@@ -900,6 +922,7 @@
 											"id": "1818181818181818",
 											"name": "Bambang Pranoto",
 											"email": "securityganteng@gmail.com",
+											"password" : "012345",
 											"phone number": "082121212121"
 										}
 									},
@@ -909,6 +932,7 @@
 											"id": "1919191919191919",
 											"name": "Kurniawan Yulianto",
 											"email": "checkerhebat@gmail.com",
+											"password" : "123456",
 											"phone number": "085767676767"
 										}
 									}
