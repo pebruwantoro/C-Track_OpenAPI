@@ -70,12 +70,17 @@
 					"200": {
 						"description": "Success Login into C-Track App",
 						"content": {
-							"examples": {
-								"dr. Boyke Santoso": {
-									"description": "Success Login into C-Track App as dr. Boyke Santoso"
+							"application/json" : {
+								"schema": {
+									"$ref": "#/components/schemas/CreateOrUpdateNakes"
 								},
-								"dr. Felix Harahap": {
-									"description": "Success Login into C-Track App as dr. Felix Harahap"
+								"examples": {
+									"dr. Boyke Santoso": {
+										"description": "Success Login into C-Track App as dr. Boyke Santoso"
+									},
+									"dr. Felix Harahap": {
+										"description": "Success Login into C-Track App as dr. Felix Harahap"
+									}
 								}
 							}
 						}
@@ -118,12 +123,17 @@
 					"200": {
 						"description": "Success Login into C-Track App",
 						"content": {
-							"examples": {
-								"Bambang Pranoto": {
-									"description": "Success Login into C-Track App as Bambang Pranoto"
+							"application/json" : {
+								"schema": {
+									"$ref": "#/components/schemas/CreateOrUpdateChecker"
 								},
-								"Kurniawan Yulianto": {
-									"description": "Success Login into C-Track App as Kurniawan Yulianto"
+								"examples": {
+									"Bambang Pranoto": {
+										"description": "Success Login into C-Track App as Bambang Pranoto"
+									},
+									"Kurniawan Yulianto": {
+										"description": "Success Login into C-Track App as Kurniawan Yulianto"
+									}
 								}
 							}
 						}
@@ -166,12 +176,17 @@
 					"200": {
 						"description": "Success Login into C-Track App",
 						"content": {
-							"examples": {
-								"Doni Pebruwantoro": {
-									"description": "Success Login into C-Track App as Doni Pebruwantoro"
+							"application/json" : {
+								"schema": {
+									"$ref": "#/components/schemas/CreateOrUpdateUser"
 								},
-								"David Beckham": {
-									"description": "Success Login into C-Track App as David Beckham"
+								"examples": {
+									"Doni Pebruwantoro": {
+										"description": "Success Login into C-Track App as Doni Pebruwantoro"
+									},
+									"David Beckham": {
+										"description": "Success Login into C-Track App as David Beckham"
+									}
 								}
 							}
 						}
